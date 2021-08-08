@@ -20,7 +20,7 @@
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/users">User</router-link>
+              <router-link class="nav-link" to="/user">User</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/posts">Post</router-link>
@@ -37,11 +37,11 @@
                 Menu
               </router-link>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" to="">Action</a></li>
-                <li><a class="dropdown-item" to="">Another action</a></li>
+                <li><a class="dropdown-item" to="">Blog</a></li>
+                <li><a class="dropdown-item" to="">Admin Console</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" to="">Something else here</a>
+                  <a class="dropdown-item" to="">About Me</a>
                 </li>
               </ul>
             </li>
