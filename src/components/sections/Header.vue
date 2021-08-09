@@ -20,7 +20,7 @@
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/user">User</router-link>
+              <router-link class="nav-link" to="/users">User</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/posts">Post</router-link>
@@ -56,7 +56,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .router-link-active{
   color: rgba(0,0,0,0.9) !important;
   border-bottom: 2px solid rgba(0,0,0,0.9) !important;

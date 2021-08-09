@@ -23,6 +23,8 @@
           create a router and also you will learn about a very interesting
           concept - Vue single file components.
         </p>
+
+        <router-link class="btn btn-dark" to="/users">User</router-link>
       </div>
     </div>
   </div>

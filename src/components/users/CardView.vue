@@ -1,22 +1,35 @@
 <template>
-  <div class="card" style="width: 18rem;">
-    <div class="card-header">
-      Featured
+  <div class="card" style="width: 22.5rem;">
+    <div class="card-header ">
+      <router-link class="user" :to="{ name: 'userId', params: { id: user.id } }">
+        {{ user.name }}
+      </router-link>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">Username: {{ user.username }}</li>
+      <li class="list-group-item">Email: {{ user.email }}</li>
+      <li class="list-group-item">Website: {{ user.website }}</li>
     </ul>
   </div>
 </template>
 
 <script>
 export default {
-  setup() {
-    return {};
+  props: {
+    user: Object,
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.router-link-active {
+  color: rgba(0, 0, 0, 0.9) !important;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: auto;
+}
+.user {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+</style>
