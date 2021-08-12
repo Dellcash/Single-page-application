@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8">
         <h1>
           Introduction
         </h1>
@@ -24,7 +24,8 @@
           concept - Vue single file components.
         </p>
 
-        <router-link class="btn btn-dark" to="/users">User</router-link>
+        <router-link class="btn btn-dark" :to="{name:'users'}">User</router-link>
+        <router-link class="btn btn-light ms-3" :to="{name:'posts'}">Post</router-link>
       </div>
     </div>
   </div>
