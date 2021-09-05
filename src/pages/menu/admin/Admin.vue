@@ -203,7 +203,7 @@
             <li class="px-3">
               <div class="text-muted fw-bold">هسته</div>
             </li>
-            <li class="px-3">
+            <li class="px-3 ">
               <a href="#" class="nav-link active">
                 <span class="ms-2 "
                   ><svg
@@ -374,68 +374,68 @@
         <div class="row">
           <div class="col-md-12 fw-bold fs-3 mt-3 mb-1 ">داشبورد</div>
         </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <div class="card text-white bg-primary h-100">
-              <div class="card-header col-md-12">
-                <i class="bi bi-graph-up fs-5 float-start"></i>
-                <h5>۳۲۰۰۰۰ تومان</h5>
+          <div class="row">
+            <div class="col-md-3 mb-3 hvr-shadow">
+              <div class="card text-white bg-primary h-100">
+                <div class="card-header col-md-12">
+                  <i class="bi bi-graph-up fs-5 float-start"></i>
+                  <h5>۳۲۰۰۰۰ تومان</h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <i class="bi bi-clock" style="font-size:12px">
+                      به روزرسانی شده در ساعت ۶:۴۰ صبح</i
+                    >
+                  </p>
+                </div>
               </div>
-              <div class="card-body">
-                <p class="card-text">
-                  <i class="bi bi-clock" style="font-size:12px">
-                    به روزرسانی شده در ساعت ۶:۴۰ صبح</i
-                  >
-                </p>
+            </div>
+            <div class="col-md-3 mb-3 hvr-shadow">
+              <div class="card text-white bg-success h-100">
+                <div class="card-header col-md-12">
+                  <i class="bi bi-pie-chart fs-5 float-start"></i>
+                  <h5>۵۵۵۰۰۰۰ تومان</h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <i class="bi bi-clock" style="font-size:12px">
+                      به روزرسانی شده در ساعت ۱۲:۴۰ ظهر</i
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3 hvr-shadow">
+              <div class="card text-white bg-danger h-100">
+                <div class="card-header col-md-12">
+                  <i class="bi bi-graph-down fs-5 float-start"></i>
+                  <h5>۹۰۰۰۰ تومان</h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <i class="bi bi-clock" style="font-size:12px">
+                      به روزرسانی شده در ساعت ۲۳:۴۰ شب</i
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3 hvr-shadow">
+              <div class="card text-white bg-warning h-100">
+                <div class="card-header col-md-12">
+                  <i class="bi bi-clipboard-data fs-5 float-start"></i>
+                  <h5>۱۱۲۰۰۰۰ تومان</h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <i class="bi bi-clock" style="font-size:12px">
+                      به روزرسانی شده در ساعت ۹:۴۰ صبح</i
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-white bg-success h-100">
-              <div class="card-header col-md-12">
-                <i class="bi bi-pie-chart fs-5 float-start"></i>
-                <h5>۵۵۵۰۰۰۰ تومان</h5>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  <i class="bi bi-clock" style="font-size:12px">
-                    به روزرسانی شده در ساعت ۱۲:۴۰ ظهر</i
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-white bg-danger h-100">
-              <div class="card-header col-md-12">
-                <i class="bi bi-graph-down fs-5 float-start"></i>
-                <h5>۹۰۰۰۰ تومان</h5>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  <i class="bi bi-clock" style="font-size:12px">
-                    به روزرسانی شده در ساعت ۲۳:۴۰ شب</i
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card text-white bg-warning h-100">
-              <div class="card-header col-md-12">
-                <i class="bi bi-clipboard-data fs-5 float-start"></i>
-                <h5>۱۱۲۰۰۰۰ تومان</h5>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  <i class="bi bi-clock" style="font-size:12px">
-                    به روزرسانی شده در ساعت ۹:۴۰ صبح</i
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="row">
           <div class="col-md-6">
             <div class="card">

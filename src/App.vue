@@ -35,7 +35,22 @@ export default {
     url("./fonts/Vazir.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
-
+@font-face {
+  font-family: 'AGhasem';
+  src: url('./fonts/AGhasem.ttf');
+}
+@font-face{
+  font-family: 'Parand';
+  src: url('./fonts/Mj_Parand.TTF');
+}
+@font-face {
+  font-family: 'Nabi' ;
+  src: url('./fonts/Mj_NabighaLight.ttf');
+}
+@font-face {
+  font-family: 'Mosa';
+  src: url('./fonts/Mj_Mousa.TTF');
+}
 body {
   font-family: "Vazir" !important;
   background: white !important;

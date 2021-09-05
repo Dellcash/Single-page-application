@@ -50,7 +50,7 @@
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <router-link class="dropdown-item" to="/blog"
+                    <router-link class="dropdown-item" :to="{name: 'blog'}"
                       >وبلاگ</router-link
                     >
                   </li>

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row text-center">
       <h4 class="fw-bold mb-4">تماس با ما</h4>
-      <p>منتظر نظارات و انتقادات گرم شما کاربران گرامی هستیم.</p>
+      <p>منتظر نظرات و انتقادات گرم شما کاربران گرامی هستیم.</p>
     </div>
 
     <div class="row align-items-center">
