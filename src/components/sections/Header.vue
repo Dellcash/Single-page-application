@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link class="nav-link " to="/">خانه</router-link>
+              <router-link class="nav-link col-1 col-sm-auto" to="/">خانه</router-link>
             </li>
             <li class="nav-item dropdown">
               <router-link
@@ -50,20 +50,20 @@
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <router-link class="dropdown-item" :to="{name: 'blog'}"
-                      >وبلاگ</router-link
+                    <router-link class="dropdown-item" :to="{name: 'adminConsole'}"
+                      >داشبورد ادمین</router-link
                     >
                   </li>
                 </ul>
               </transition>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'adminConsole' }"
-                >داشبورد ادمین</router-link
+              <router-link class="nav-link col-1 col-sm-auto" :to="{ name: 'blog' }"
+                >وبلاگ</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/about">درباره من</router-link>
+              <router-link class="nav-link col-2 col-sm-auto" to="/about">درباره من</router-link>
             </li>
           </ul>
           <div class="flex-md-shrink-0">

@@ -6,35 +6,40 @@
       >
         <h1 class="vue-color ghasem mb-0">دنیای</h1>
         <h1 class="vue-color main_heading ghasem">ویو‌جی‌اس</h1>
-        <p class="main_heading__para">
+        <p class="main_heading__para parand">
           <span class=" fs-5">خوش اومدید به </span>
-          <span class="vue-bg p-1 text-white rounded-1 hvr-glow fs-8"
+          <span class="vue-bg p-1 text-white rounded-1 hvr-glow fs-8 parand"
             >ریزاطلاعات ویو‌جی‌اس</span
           >
         </p>
       </div>
       <!-- The main image -->
       <div
-        class="main_header__div d-flex align-self-start justify-content-center pl-5 flex-column shadow"
+        class="main_header__div d-flex align-items-start justify-content-center pe-5 flex-column shadow"
       >
         <p class="ghasem">دنیای ویو‌جی‌اس</p>
-        <h4 class="animateWord">
-          <span>اون </span>
+        <h2 class="animateWord">
+          <span class="mosa">اون </span>
           <div>
-            <ul class="flip">
-              <li>سریعه</li>
-              <li>سبکه</li>
-              <li>یادگیریش راحته</li>
-              <li>و <span>زیباس</span></li>
+            <ul class="flip" style="padding-right: 0">
+              <li class="farsi">و <span>زیباست </span></li>
+              <li class="parand">یادگیریش راحته</li>
+              <li class="bank">سبکه</li>
+              <li class="moshfeg">سریعه</li>
             </ul>
           </div>
-        </h4>
-        <button class="">مستندات</button>
+        </h2>
+        <a
+          href="https://v3.vuejs.org/"
+          class="btn btn-success mt-2"
+          target="_blank"
+          >مستندات</a
+        >
       </div>
     </header>
 
     <!-- ْTwo side div -->
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <!-- to get the left and right side div space -->
         <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
@@ -48,7 +53,7 @@
                     class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 "
                   >
                     <h1 class="mosa ">ویو‌جی‌اس ۳</h1>
-                    <p class="blog-title nabi">
+                    <p class="blog_title nabi">
                       <span class="fw-bold ">زمان انتشار,</span>
                       <span>۱۸ سپتامبر ۲۰۲۰</span>
                     </p>
@@ -56,13 +61,13 @@
                   <figure class="right_side__img mb-5">
                     <img
                       src="@/assets/images/v3..jpg"
-                      class="img-fluid shadow"
+                      class="img-fluid shadow hvr-float-shadow"
                     />
                   </figure>
                   <p>
-                    <span class="fw-bold">"One Piece" </span>نام نسخه سوم
-                    ویو‌جی‌اس است. " آپدیت های بزرگ ویو هرکدوم با یه اسم انیمه
-                    خاص نامگذاری میشن."
+                    <span class="fw-bold" style="color:black">"One Piece" </span
+                    >نام نسخه سوم ویو‌جی‌اس است. " آپدیت های بزرگ ویو هرکدوم با
+                    یه اسم انیمه خاص نامگذاری میشن."
                   </p>
                   <p>
                     ويژگی‌های مهمی که به این نسخه اضافه شد میشه اشاره کرد به<br />
@@ -73,10 +78,12 @@
                     <span class="fw-bold">"سرعت"</span><br />
                     و...
                   </p>
-                  <a href="#" class="text-success"> <p class="vue-color">ادامه مطلب...</p> </a>
+                  <a href="#" class="text-success">
+                    <p class="vue-color">ادامه مطلب...</p>
+                  </a>
                   <div class="d-flex justify-content-between left-div-btns">
                     <div>
-                      <button class="left_div__like" id="like_btn">
+                      <button class="btn btn-success" id="like_btn">
                         لایک
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -93,12 +100,20 @@
                       </button>
                     </div>
                     <div>
-                      <button class="left_div_reply">
-                        پاسخ <badge class="bg-white text-dark p-2">۱</badge>
+                      <button
+                        class="btn btn-outline-success mb-3"
+                        @click="showPost"
+                      >
+                        پاسخ
+                        <badge class="badge bg-white text-dark p-2">۱</badge>
                       </button>
                     </div>
                   </div>
-                  <div class="replies" id="reply1">
+                  <div
+                    class="replies pb-4 animate__animated animate__fadeInDown"
+                    id="reply1"
+                    v-if="!post"
+                  >
                     <div
                       class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
                     >
@@ -106,10 +121,11 @@
                         <img src="@/assets/images/user1.jpg" alt="" />
                       </div>
                       <div class="replY_text_left">
-                        <p class="blog_title">
-                          <span class="fw-bold">دلکش</span>۱۸ سپتامبر ۲۰۲۰٬۵:۳۷
+                        <p class="blog_title m-0 small">
+                          <span class="fw-bold">دلکش </span>۱۸ سپتامبر ٬۲۰۲۰
+                          ۵:۳۷
                         </p>
-                        <p>عالی بود پستت٬ادامه بده!!</p>
+                        <p class="m-0">عالی بود پستت٬ادامه بده!!</p>
                       </div>
                     </div>
                   </div>
@@ -126,10 +142,16 @@
 
 <script>
 export default {
-data(){
-  return{
-  }
-}
+  data() {
+    return {
+      post: true,
+    };
+  },
+  methods: {
+    showPost() {
+      this.post = !this.post;
+    },
+  },
 };
 </script>
 
@@ -137,11 +159,11 @@ data(){
 :root {
   --bg-size: 100% 100%;
 }
-.vue-color{
-  color: #42b883
+.vue-color {
+  color: #42b883;
 }
-.vue-bg{
-  background-color:#42b883
+.vue-bg {
+  background-color: #42b883;
 }
 .ghasem {
   font-family: "AGhasem";
@@ -154,6 +176,18 @@ data(){
 }
 .nabi {
   font-family: "Nabi";
+}
+.farsi {
+  font-family: "Farsi";
+}
+.moshfeg {
+  font-family: "Moshfeg";
+}
+.parand {
+  font-family: "Parand";
+}
+.bank {
+  font-family: "Bank";
 }
 a {
   text-decoration: none;
@@ -169,10 +203,108 @@ svg,
 .fab {
   transition: 0.3s all ease;
 }
-.main_header__div{
+.main_header__div {
   height: calc(100vh - 40vh);
-  background-image: url('~@/assets/images/Vue.js_Logo_2.svg') , linear-gradient(to right, #42b883 , #35495e);
-  background-size:  contain,cover;
+  background-image: url("~@/assets/images/256px-Vue.js_Logo_2.svg.png"),
+    linear-gradient(to right, #42b883, #35495e);
+  background-size: auto;
   background-repeat: no-repeat;
+  background-position: center;
+}
+.main_header__div p {
+  font-size: 2.5rem;
+  color: #fff;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.main_header__div h2 {
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 1rem;
+  transition: 0.3s all ease;
+}
+.animateWord div li {
+  font-weight: bold;
+  padding: 0 1rem;
+  height: 2rem;
+  margin-bottom: 3.7rem;
+  display: block;
+}
+.animateWord div {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  height: 4rem;
+  padding-top: 1rem;
+  margin-top: -1rem;
+}
+.flip {
+  -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+@-webkit-keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+  5% {
+    margin-top: -270px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  30% {
+    margin-top: -175px;
+  }
+  50% {
+    margin-top: -175px;
+  }
+  55% {
+    margin-top: -87px;
+  }
+  75% {
+    margin-top: -87px;
+  }
+  80% {
+    margin-top: 8px;
+  }
+  99.99% {
+    margin-top: 8px;
+  }
+  100% {
+    margin-top: -275px;
+  }
+}
+@keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+  5% {
+    margin-top: -270px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  30% {
+    margin-top: -175px;
+  }
+  50% {
+    margin-top: -175px;
+  }
+  55% {
+    margin-top: -87px;
+  }
+  75% {
+    margin-top: -87px;
+  }
+  80% {
+    margin-top: 8px;
+  }
+  99.99% {
+    margin-top: 8px;
+  }
+  100% {
+    margin-top: -275px;
+  }
 }
 </style>

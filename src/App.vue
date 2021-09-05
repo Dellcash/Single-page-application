@@ -51,6 +51,22 @@ export default {
   font-family: 'Mosa';
   src: url('./fonts/Mj_Mousa.TTF');
 }
+@font-face {
+  font-family: 'Farsi';
+  src: url('./fonts/Mj_FarsiNormal.ttf');
+}
+@font-face {
+  font-family: 'Moshfeg';
+  src: url('./fonts/Mj_Moshfegh.ttf');
+}
+@font-face {
+  font-family: 'Parand';
+  src: url('./fonts/Mj_Parand.TTF');
+}
+@font-face {
+  font-family: 'Bank';
+  src: url('./fonts/Far.Bank.ttf');
+}
 body {
   font-family: "Vazir" !important;
   background: white !important;
