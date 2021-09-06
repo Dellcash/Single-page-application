@@ -1,4 +1,5 @@
 <template>
+
   <div style="height: 80px; overflow: hidden; ">
     <svg
       viewBox="0 0 500 150"
