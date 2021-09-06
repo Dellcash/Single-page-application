@@ -18,7 +18,7 @@
         <div class="col-md-4 offset-md-1">
           <img style="width:100px" src="@/assets/images/logo.jpg" alt="" />
           <p class="mt-2 mb-1">
-            وی واو وبسایتی برای معرفی فریمورک ویو جی‌اس و تازه ترین خبر‌ها در
+             واو وبسایتی برای معرفی فریمورک ویو جی‌اس و تازه ترین خبر‌ها در
             مورده آن.
           </p>
           <i class="bi bi-instagram fs-2"></i>

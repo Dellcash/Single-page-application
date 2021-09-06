@@ -38,7 +38,9 @@ const routes = [
   { path: '/about', name: 'aboutMe', component: () => import('./pages/menu/about/About.vue') },
 
   // Blog
-  { path: '/blog', name: 'blog', component: () => import('./pages/menu/blog/Blog.vue') },
+  { path: '/blog', name: 'blog', component: () => import('./pages/menu/blog/Blog.vue'), meta:{
+    hideNavbar: true
+  } },
 
   // 404 Page
   { path: "/:pathMatch(.*)*", name: "pageNotFound", component: () => import('./pages/home/404.vue') }

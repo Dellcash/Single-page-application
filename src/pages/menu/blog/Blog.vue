@@ -1,5 +1,88 @@
 <template>
   <div class="body">
+    <!-- Nav -->
+    <header class="shadow ">
+      <nav class=" navbar  navbar-expand-lg  navbar-light bkg ">
+        <div class="container py-2 mb-2 font-monospace flex-md-column-reverse">
+          <!-- <a class="navbar-brand web" href="/">V<img src="@\assets\images\eye.png">W</a> -->
+          <!-- <a class="navbar-brand web" href="/"
+            ><img class="logo" src="@/assets/images/logo.jpg" alt="logo"
+          /></a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <router-link class="nav-link col-1 col-sm-auto fw-bold px-3" to="/"
+                  >خانه</router-link
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <router-link
+                  class="nav-link dropdown-toggle fw-bold px-3"
+                  :to="{ name: 'menuTemplate' }"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  منو
+                </router-link>
+                <transition
+                  class="animate__animated animate__fadeInDown "
+                  mode="out-in"
+                >
+                  <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <li>
+                      <router-link
+                        class="dropdown-item "
+                        :to="{ name: 'users' }"
+                        >کاربران</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link class="dropdown-item" :to="{ name: 'posts' }"
+                        >پست ها</router-link
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <router-link
+                        class="dropdown-item"
+                        :to="{ name: 'adminConsole' }"
+                        >داشبورد ادمین</router-link
+                      >
+                    </li>
+                  </ul>
+                </transition>
+              </li>
+              <li class="nav-item">
+                <router-link
+                  class="nav-link col-1 col-sm-auto fw-bold px-3"
+                  :to="{ name: 'blog' }"
+                  >وبلاگ</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link col-2 col-sm-auto fw-bold px-3" to="/about"
+                  >درباره من</router-link
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <header class="main_header">
       <div
         class="d-flex justify-content-center align-items-center flex-column py-5 "
@@ -17,7 +100,7 @@
       <div
         class="main_header__div d-flex align-items-start justify-content-center pe-5 flex-column shadow"
       >
-        <p class="ghasem" style="font-size:50px"> ویو‌جی‌اس</p>
+        <p class="ghasem" style="font-size:50px">ویو‌جی‌اس</p>
         <h2 class="animateWord">
           <span class="mosa">اون </span>
           <div>
@@ -422,6 +505,45 @@ export default {
 a {
   text-decoration: none;
 }
+.bkg {
+  background: #f7f7f7;
+}
+.dropdown-menu[data-bs-popper] {
+  left: -47px;
+}
+.dropdown-item {
+  display: -webkit-inline-box;
+}
+.dropdown-toggle::after {
+  margin-bottom: -5px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #42b883;
+    border-color: #42b883;
+}
+.router-link-active {
+  color: #35495e !important;
+  border-bottom: 2px solid #35495e !important;
+}
+a {
+  cursor: pointer;
+}
+#navbarDropdown {
+  /* border-bottom: 2px solid rgba(0, 0, 0, 0.9) !important; */
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+.dropdown-item {
+  border: none !important;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; */
+}
+.logo {
+  width: 100px;
+}
+.b{
+  font-size:1rem;
+}
+
 p,
 label,
 input::placeholder {
@@ -478,10 +600,10 @@ svg,
     margin-top: -360px;
   }
   5% {
-    margin-top: -269px;
+    margin-top: -272px;
   }
   25% {
-    margin-top: -269px;
+    margin-top: -272px;
   }
   30% {
     margin-top: -175px;
@@ -510,10 +632,10 @@ svg,
     margin-top: -360px;
   }
   5% {
-    margin-top: -269px;
+    margin-top: -272px;
   }
   25% {
-    margin-top: -269px;
+    margin-top: -272px;
   }
   30% {
     margin-top: -175px;
