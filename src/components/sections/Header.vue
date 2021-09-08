@@ -4,7 +4,7 @@
       <div class="container ">
         <!-- <a class="navbar-brand web" href="/">V<img src="@\assets\images\eye.png">W</a> -->
         <a class="navbar-brand web" href="/"
-          ><img class="logo" src="@/assets/images/logo.jpg" alt="logo"
+          ><img class="logo hvr-wobble-top" src="@/assets/images/logo.jpg" alt="logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -45,7 +45,7 @@
                   </li>
                   <li>
                     <router-link class="dropdown-item" :to="{ name: 'posts' }"
-                      >پست ها</router-link
+                      >پست‌ها</router-link
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>

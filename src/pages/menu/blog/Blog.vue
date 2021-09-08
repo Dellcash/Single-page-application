@@ -9,7 +9,7 @@
             ><img class="logo" src="@/assets/images/logo.jpg" alt="logo"
           /></a> -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler "
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -141,7 +141,7 @@
                   >
                     <h1 class="mosa ">ویو‌جی‌اس ۳</h1>
                     <p class="blog_title nabi">
-                      <span class="fw-bold ">زمان انتشار,</span>
+                      <span class="fw-bold ">زمان انتشار, </span>
                       <span>۱۸ سپتامبر ۲۰۲۰</span>
                     </p>
                   </div>
@@ -153,11 +153,11 @@
                   </figure>
                   <p>
                     <span class="fw-bold" style="color:black">"One Piece" </span
-                    >نام نسخه سوم ویو‌جی‌اس است. " آپدیت های بزرگ ویو هرکدوم با
-                    یه اسم انیمه خاص نامگذاری میشن."
+                    >نام نسخه سوم ویو‌جی‌اس است. "آپدیت‌های بزرگ ویو هر کدوم با
+                    یه اسم انیمه خاص نام‌گذاری می‌شن."
                   </p>
                   <p>
-                    ويژگی‌های مهمی که به این نسخه اضافه شد میشه اشاره کرد به<br />
+                    ويژگی‌های مهمی که به این نسخه اضافه شد می‌شه اشاره کرد به<br />
                     <span class="fw-bold">"Composition API" </span><br />
                     <span class="fw-bold">"Teleport" </span><br />
                     <span class="fw-bold">"Fragments" </span><br />
@@ -196,7 +196,7 @@
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-check2 animate__animated animate__fadeIn"
+                          class="bi bi-check2 "
                           viewBox="0 0 16 16"
                           v-else
                         >
@@ -355,7 +355,7 @@
                   </div>
                 </div>
                 <!-- third post -->
-                <div class="col-12 card p-4 shadow blog_left__div">
+                <div class="col-12 card p-4 shadow blog_left__div mb-5">
                   <div
                     class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 "
                   >
@@ -491,13 +491,13 @@
             </div>
             <!-- to get the right side of the div space -->
             <div
-              class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto"
+              class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 mx-auto"
             >
               <div class="row gy-5 left_div_blog">
                 <!-- About me -->
-                <div class="col-12 about_me_div shadow farsi text-md-center">
-                  <p class="text-white fs-4 mb-0">امید دلکَش</p>
-                  <p class="text-white fs-6">بله من ویو‌جی‌اس ‌دولوپر هستم.!</p>
+                <div class="col-12 container-fluid about_me_div shadow farsi text-md-center ">
+                  <p class="text-white fs-4 mb-0 text-center">امید دلکَش</p>
+                  <p class="text-white fs-6 text-center">بله من ویو‌جی‌اس ‌دولوپر هستم.!</p>
                 </div>
                 <!-- core team member -->
                 <div class="core_team">
@@ -523,7 +523,7 @@
                       <div class="col-3 core_team__img1 py-2 pl-2"></div>
                       <div class="col-9">
                         <h5>آدام جار</h5>
-                        <p>بنیانگذار vuemastery</p>
+                        <p>بنیان‌گذار vuemastery</p>
                       </div>
                     </div>
                     <div class="row">
@@ -543,7 +543,7 @@
                   </div>
                   <div class="right_sub_div">
                     <div class="advertise_img bg-light shadow">
-                      <p>تبلیغات اینجا قرار میگیرد.</p>
+                      <p>تبلیغات اینجا قرار می‌گیرد.</p>
                     </div>
                   </div>
                 </div>
@@ -569,7 +569,7 @@
                 <!-- inspiration -->
                 <div class="right_div_post">
                   <div class="right_div__title py-4 pl-2">
-                    <h5>الهام‌گرفته شده از</h5>
+                    <h5>الهام‌گرفته‌شده از</h5>
                   </div>
                   <div class="right_sub__div">
                     <div class="row gx-3">
@@ -615,7 +615,7 @@
                 <!-- follow me -->
                 <div class="right-div-post">
                   <div class="right_div_title py-4 pl-2">
-                    <h5>دنبال‌کنید</h5>
+                    <h5>دنبال‌ کنید</h5>
                   </div>
                   <div class="right_sub_div d-flex justify-content-around">
                     <a href="#"><i class="bi bi-telegram"></i></a>
@@ -627,13 +627,13 @@
                 <!-- subscribe newsletter -->
                 <div class="right-div-post">
                   <div class="right_div_title py-4 pl-2">
-                    <h5>اشتراک ‌گذاری</h5>
+                    <h5>اشتراک‌گذاری</h5>
                   </div>
                   <div class="right_sub_div ">
                     <form>
                       <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                          >آدرس ایمیل خود را برای دریافت آخرین خبرها وارد کیند.</label
+                          >آدرس ایمیل خود را برای دریافت آخرین خبرها وارد کنید.</label
                         >
                         <input
                           type="email"
@@ -839,16 +839,16 @@ svg,
     margin-top: -272px;
   }
   30% {
-    margin-top: -175px;
+    margin-top: -177px;
   }
   50% {
-    margin-top: -175px;
+    margin-top: -177px;
   }
   55% {
-    margin-top: -85px;
+    margin-top: -87px;
   }
   75% {
-    margin-top: -85px;
+    margin-top: -87px;
   }
   80% {
     margin-top: 8px;
@@ -871,16 +871,16 @@ svg,
     margin-top: -272px;
   }
   30% {
-    margin-top: -175px;
+    margin-top: -177px;
   }
   50% {
-    margin-top: -175px;
+    margin-top: -177px;
   }
   55% {
-    margin-top: -85px;
+    margin-top: -87px;
   }
   75% {
-    margin-top: -85px;
+    margin-top: -87px;
   }
   80% {
     margin-top: 8px;
@@ -900,6 +900,6 @@ svg,
   justify-content: flex-end;
   flex-direction: column;
   background-image: linear-gradient(to bottom, transparent 75%,rgba(208,206,207,0.5) 75%),url("~@/assets/images/use.jpg");
-  background-size: 100% 100%;
+  background-size: 100%;
 }
 </style>

@@ -4,29 +4,29 @@
       <div class="row align-items-center mt-5 ">
         <div class="col-md-6 mt-md-4 ">
           <h2 class="fw-bold  mb-3 md-align-items-center" style="color:#198754">
-            ویو جی اس در طراحی وب
+            ویوجی‌اس در طراحی وب
           </h2>
           <ul>
             <li>
-              <h5 class="fw-bold pb-md-4 pb-3">کاربرد ویو جی اس در وب سایت های SPA</h5>
+              <h5 class="fw-bold pb-md-4 pb-3">کاربرد ویو‌جی‌اس در وب‌سایت‌های SPA</h5>
             </li>
           </ul>
           <!-- <br />
           <br /> -->
           <p>
             <span
-              >شما میتونین با استفاده از Vue Js سایت های SPA طراحی کنین.</span
+              >شما می‌تونین با استفاده از VueJs سایت‌های SPA طراحی کنین.</span
             >
           </p>
           <p>
             <span
-              >اجازه بدین قبل از عمیق تر شدن در این قسمت توضیحی در مورد SPA
+              >اجازه بدین قبل از عمیق‌تر شدن در این قسمت توضیحی در مورد SPA
               براتون بدم.</span
             >
             <br />
             <span
-              >کلمه SPA مخفف Single Page Application بوده و به معنی تک صفحه هست.
-              پس وقتی میگیم وب سایت Spa، منظورمون یک وب سایت تک صفحه ای
+              >کلمه SPA مخفف Single Page Application بوده و به معنی تک‌صفحه هست.
+              پس وقتی می‌گیم وب‌سایت Spa، منظورمون یک وب‌سایت تک‌‌صفحه‌ای
               هست؛</span
             >
           </p>
@@ -76,7 +76,7 @@
             >کاربران</router-link
           >
           <router-link class="btn btn-light me-3 hvr-glow" :to="{ name: 'posts' }"
-            >پست ها</router-link
+            >پست‌ها</router-link
           >
         </div>
         <div class="col-md-6">

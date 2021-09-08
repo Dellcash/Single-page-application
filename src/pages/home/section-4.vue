@@ -118,7 +118,7 @@
       <div class="row">
         <div class="col mt-5">
           <p class="text-white">
-             * برای مشاهده کنفرانس‌های براگزار شده
+             * برای مشاهده کنفرانس‌های برگزارشده
             <a class="ey" href="https://events.vuejs.org/conferences/" target="_blank"
               >کلیک</a
             > کنید.

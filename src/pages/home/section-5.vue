@@ -9,7 +9,7 @@
       <div class="col-md-5 offset-md-2">
         <form @submit.prevent="validate">
           <div class="mb-3">
-            <label class="form-label">آدرس ایمیل</label>
+            <label class="form-label">آدرس ایمیل:</label>
             <input
               type="email"
               class="form-control"
@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="mb-3">
-            <label class="form-label">متن پیام</label>
+            <label class="form-label">متن پیام:</label>
             <textarea
               class="form-control"
               cols="10"
@@ -52,7 +52,7 @@
         </form>
       </div>
       <div class="col-md-5 ">
-        <img class="img-fluid" src="@/assets/images/img_5.png" alt="" />
+        <img class="img-fluid " src="@/assets/images/img_5.png" alt="" />
       </div>
     </div>
 

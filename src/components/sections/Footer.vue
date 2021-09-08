@@ -16,15 +16,15 @@
     <div class="container pb-3">
       <div class="row g-5">
         <div class="col-md-4 offset-md-1">
-          <img style="width:100px" src="@/assets/images/logo.jpg" alt="" />
+          <img style="width:100px" src="@/assets/images/logo.jpg" alt="" class="hvr-wobble-top"/>
           <p class="mt-2 mb-1">
-             واو وبسایتی برای معرفی فریمورک ویو جی‌اس و تازه ترین خبر‌ها در
-            مورده آن.
+             واو وب‌سایتی برای معرفی فریمورک ویو جی‌اس و تازه‌ترین خبر‌ها در
+            مورد آن.
           </p>
-          <i class="bi bi-instagram fs-2"></i>
-          <i class="bi bi-telegram fs-2 mx-3"></i>
-          <i class="bi bi-github fs-2 ms-3"></i>
-          <i class="bi bi-linkedin fs-2"></i>
+          <i class="bi bi-instagram fs-2 hvr-buzz"></i>
+          <i class="bi bi-telegram fs-2 mx-3 hvr-buzz"></i>
+          <i class="bi bi-github fs-2 ms-3 hvr-buzz"></i>
+          <i class="bi bi-linkedin fs-2 hvr-buzz"></i>
         </div>
         <div class="col-md-7 ">
           <div class="row">

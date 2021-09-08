@@ -379,12 +379,12 @@
               <div class="card text-white bg-primary h-100">
                 <div class="card-header col-md-12">
                   <i class="bi bi-graph-up fs-5 float-start"></i>
-                  <h5>۳۲۰۰۰۰ تومان</h5>
+                  <h5>۳۲۰٫۰۰۰ تومان</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text">
                     <i class="bi bi-clock" style="font-size:12px">
-                      به روزرسانی شده در ساعت ۶:۴۰ صبح</i
+                      به‌روزرسانی‌شده در ساعت ۶:۴۰ صبح</i
                     >
                   </p>
                 </div>
@@ -394,12 +394,12 @@
               <div class="card text-white bg-success h-100">
                 <div class="card-header col-md-12">
                   <i class="bi bi-pie-chart fs-5 float-start"></i>
-                  <h5>۵۵۵۰۰۰۰ تومان</h5>
+                  <h5>۵٫۵۵۰٫۰۰۰ تومان</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text">
                     <i class="bi bi-clock" style="font-size:12px">
-                      به روزرسانی شده در ساعت ۱۲:۴۰ ظهر</i
+                      به‌روزرسانی‌شده در ساعت ۱۲:۴۰ ظهر</i
                     >
                   </p>
                 </div>
@@ -409,12 +409,12 @@
               <div class="card text-white bg-danger h-100">
                 <div class="card-header col-md-12">
                   <i class="bi bi-graph-down fs-5 float-start"></i>
-                  <h5>۹۰۰۰۰ تومان</h5>
+                  <h5>۹۰٫۰۰۰ تومان</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text">
                     <i class="bi bi-clock" style="font-size:12px">
-                      به روزرسانی شده در ساعت ۲۳:۴۰ شب</i
+                      به‌روزرسانی‌شده در ساعت ۲۳:۴۰ شب</i
                     >
                   </p>
                 </div>
@@ -424,12 +424,12 @@
               <div class="card text-white bg-warning h-100">
                 <div class="card-header col-md-12">
                   <i class="bi bi-clipboard-data fs-5 float-start"></i>
-                  <h5>۱۱۲۰۰۰۰ تومان</h5>
+                  <h5>۱٫۱۲۰٫۰۰۰ تومان</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text">
                     <i class="bi bi-clock" style="font-size:12px">
-                      به روزرسانی شده در ساعت ۹:۴۰ صبح</i
+                      به‌روزرسانی‌شده در ساعت ۹:۴۰ صبح</i
                     >
                   </p>
                 </div>
