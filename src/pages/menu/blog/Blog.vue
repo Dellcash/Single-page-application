@@ -22,7 +22,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <router-link class="nav-link col-1 col-sm-auto fw-bold px-3" to="/"
+                <router-link
+                  class="nav-link col-1 col-sm-auto fw-bold px-3"
+                  to="/"
                   >خانه</router-link
                 >
               </li>
@@ -73,7 +75,9 @@
                 >
               </li>
               <li class="nav-item">
-                <router-link class="nav-link col-2 col-sm-auto fw-bold px-3" to="/about"
+                <router-link
+                  class="nav-link col-2 col-sm-auto fw-bold px-3"
+                  to="/about"
                   >درباره من</router-link
                 >
               </li>
@@ -89,7 +93,7 @@
       >
         <h1 class="vue-color ghasem mb-0">دنیای</h1>
         <h1 class="vue-color main_heading ghasem">ویو‌جی‌اس</h1>
-        <p class="main_heading__para parand">
+        <p class="main_heading__para parand" style="font-size: 20px;">
           <span class=" fs-5" style="color:black">خوش اومدید به </span>
           <span class="vue-bg p-1 text-white rounded-1 hvr-glow fs-8 parand"
             >ریزاطلاعات ویو‌جی‌اس</span
@@ -128,7 +132,7 @@
         <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
           <div class="row gx-5 mx-sm-auto">
             <!-- to get the left side of the div space -->
-            <div class="col-lg-8 col-md-11 col-11 mx-auto">
+            <div class="col-lg-8 col-md-11 col-11 mx-auto me-md-0">
               <div class="row gy-5">
                 <!-- first post -->
                 <div class="col-12 card p-4 shadow blog_left__div">
@@ -272,7 +276,7 @@
                       <button
                         class="btn btn-success "
                         id="like_btn"
-                        @click="likedPost"
+                        @click="likedPost1"
                       >
                         <!-- {{liked ? 'خوشم‌اومد' : 'لایک'}} -->
                         لایک
@@ -283,7 +287,7 @@
                           fill="currentColor"
                           class="bi bi-hand-thumbs-up-fill animate__animated animate__fadeIn"
                           viewBox="0 0 16 16"
-                          v-if="!liked"
+                          v-if="!liked1"
                         >
                           <path
                             d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"
@@ -308,17 +312,17 @@
                     <div>
                       <button
                         class="btn btn-outline-success mb-3"
-                        @click="showPost"
+                        @click="showPost1"
                       >
                         پاسخ
-                        <badge class="badge bg-white text-dark p-2">۱</badge>
+                        <badge class="badge bg-white text-dark p-2">۲</badge>
                       </button>
                     </div>
                   </div>
                   <div
                     class="replies pb-4 animate__animated animate__fadeInDown"
                     id="reply1"
-                    v-if="!post"
+                    v-if="!post1"
                   >
                     <div
                       class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
@@ -331,7 +335,21 @@
                           <span class="fw-bold" style="color:black">دلکش </span
                           >۱۸ سپتامبر ٬۲۰۲۰ ۵:۳۷
                         </p>
-                        <p class="m-0">عالی بود پستت٬ادامه بده!!</p>
+                        <p class="m-0">کاش میشد دید.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-items-center">
+                        <img src="@/assets/images/user1.jpg" alt="" />
+                      </div>
+                      <div class="replY_text_left">
+                        <p class="blog_title m-0 small">
+                          <span class="fw-bold" style="color:black">دلکش </span
+                          >۱۸ سپتامبر ٬۲۰۲۱ ۱:۳۱
+                        </p>
+                        <p class="m-0">رو چ حساب آخه اینجوری عمل کردن؟؟</p>
                       </div>
                     </div>
                   </div>
@@ -375,7 +393,7 @@
                       <button
                         class="btn btn-success "
                         id="like_btn"
-                        @click="likedPost"
+                        @click="likedPost2"
                       >
                         <!-- {{liked ? 'خوشم‌اومد' : 'لایک'}} -->
                         لایک
@@ -386,7 +404,7 @@
                           fill="currentColor"
                           class="bi bi-hand-thumbs-up-fill animate__animated animate__fadeIn"
                           viewBox="0 0 16 16"
-                          v-if="!liked"
+                          v-if="!liked2"
                         >
                           <path
                             d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"
@@ -411,18 +429,48 @@
                     <div>
                       <button
                         class="btn btn-outline-success mb-3"
-                        @click="showPost"
+                        @click="showPost2"
                       >
                         پاسخ
-                        <badge class="badge bg-white text-dark p-2">۱</badge>
+                        <badge class="badge bg-white text-dark p-2">۳</badge>
                       </button>
                     </div>
                   </div>
                   <div
                     class="replies pb-4 animate__animated animate__fadeInDown"
                     id="reply1"
-                    v-if="!post"
+                    v-if="!post2"
                   >
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card replay_card py-3 mb-3"
+                    >
+                      <div class="reply_img mx-2 align-items-center ">
+                        <img src="@/assets/images/user1.jpg" alt="" />
+                      </div>
+                      <div class="replY_text_left">
+                        <p class="blog_title m-0 small">
+                          <span class="fw-bold" style="color:black">دلکش </span
+                          >۱۸ سپتامبر ٬۲۰۲۱ ۶:۳۷
+                        </p>
+                        <p class="m-0">
+                          اصن فکرشم نمیکردم اینجوری بوده باشه!!!
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card replay_card py-3 mb-3"
+                    >
+                      <div class="reply_img mx-2 align-items-center">
+                        <img src="@/assets/images/user1.jpg" alt="" />
+                      </div>
+                      <div class="replY_text_left">
+                        <p class="blog_title m-0 small">
+                          <span class="fw-bold" style="color:black">دلکش </span
+                          >۱۸ سپتامبر ٬۲۰۲۲ ۹:۳۷
+                        </p>
+                        <p class="m-0">قشنگ بود :///</p>
+                      </div>
+                    </div>
                     <div
                       class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
                     >
@@ -442,6 +490,167 @@
               </div>
             </div>
             <!-- to get the right side of the div space -->
+            <div
+              class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto"
+            >
+              <div class="row gy-5 left_div_blog">
+                <!-- About me -->
+                <div class="col-12 about_me_div shadow farsi text-md-center">
+                  <p class="text-white fs-4 mb-0">امید دلکَش</p>
+                  <p class="text-white fs-6">بله من ویو‌جی‌اس ‌دولوپر هستم.!</p>
+                </div>
+                <!-- core team member -->
+                <div class="core_team">
+                  <div class="right_div_title py-4 pl-2">
+                    <h5>اعضای اصلی</h5>
+                  </div>
+                  <div class="right_sub-div shadow">
+                    <div class="row">
+                      <div class="col-3 core_team__img1 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h5>ایوان یوو</h5>
+                        <p>خالق ویو‌جی‌اس</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3 core_team__img1 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h5>بن هانگ</h5>
+                        <p>عضو اصلی تیم</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3 core_team__img1 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h5>آدام جار</h5>
+                        <p>بنیانگذار vuemastery</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3 core_team__img1 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h5>کیا کینگ</h5>
+                        <p>عضو اصلی تیم</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- advertise part -->
+                <div class="right_div_post">
+                  <div class="right_div_title py-4 pl-2">
+                    <h5>تبلیغات</h5>
+                  </div>
+                  <div class="right_sub_div">
+                    <div class="advertise_img bg-light shadow">
+                      <p>تبلیغات اینجا قرار میگیرد.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- tags -->
+                <div class="right_div_post">
+                  <div class="right_div__title py-4 pl-2">
+                    <h5>تگ‌ها</h5>
+                  </div>
+                  <div class="tags-main right_sub__div">
+                    <a href="#" class="badge shadow text-capitalize">vue</a>
+                    <a href="#" class="badge shadow text-capitalize">vuetify</a>
+                    <a href="#" class="badge shadow text-capitalize">vuex</a>
+                    <a href="#" class="badge shadow text-capitalize">nuxt</a>
+                    <a href="#" class="badge shadow text-capitalize"
+                      >tailwind</a
+                    >
+                    <a href="#" class="badge shadow text-capitalize"
+                      >bootstrapvue</a
+                    >
+                    <a href="#" class="badge shadow text-capitalize">c</a>
+                  </div>
+                </div>
+                <!-- inspiration -->
+                <div class="right_div_post">
+                  <div class="right_div__title py-4 pl-2">
+                    <h5>الهام‌گرفته شده از</h5>
+                  </div>
+                  <div class="right_sub__div">
+                    <div class="row gx-3">
+                      <div class="col-6">
+                        <figure>
+                          <img
+                            src="@/assets/images/eye(5).png"
+                            alt=""
+                            class="img-fluid shadow hvr-float-shadow"
+                          />
+                        </figure>
+                      </div>
+                      <div class="col-6">
+                        <figure>
+                          <img
+                            src="@/assets/images/eye-tracking.png"
+                            alt=""
+                            class="img-fluid shadow hvr-float-shadow"
+                          />
+                        </figure>
+                      </div>
+                      <div class="col-6">
+                        <figure>
+                          <img
+                            src="@/assets/images/view.png"
+                            alt=""
+                            class="img-fluid shadow hvr-float-shadow"
+                          />
+                        </figure>
+                      </div>
+                      <div class="col-6">
+                        <figure>
+                          <img
+                            src="@/assets/images/visibility3.png"
+                            alt=""
+                            class="img-fluid shadow hvr-float-shadow"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- follow me -->
+                <div class="right-div-post">
+                  <div class="right_div_title py-4 pl-2">
+                    <h5>دنبال‌کنید</h5>
+                  </div>
+                  <div class="right_sub_div d-flex justify-content-around">
+                    <a href="#"><i class="bi bi-telegram"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <!-- subscribe newsletter -->
+                <div class="right-div-post">
+                  <div class="right_div_title py-4 pl-2">
+                    <h5>اشتراک ‌گذاری</h5>
+                  </div>
+                  <div class="right_sub_div ">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >آدرس ایمیل خود را برای دریافت آخرین خبرها وارد کیند.</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="name@mail.com"
+                        />
+                      <button type="submit" class="btn btn-success mt-2">
+                        ارسال
+                      </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -454,15 +663,31 @@ export default {
   data() {
     return {
       post: true,
+      post1: true,
+      post2: true,
       liked: false,
+      liked1: false,
+      liked2: false,
     };
   },
   methods: {
     showPost() {
       this.post = !this.post;
     },
+    showPost1() {
+      this.post1 = !this.post1;
+    },
+    showPost2() {
+      this.post2 = !this.post2;
+    },
     likedPost() {
       this.liked = !this.liked;
+    },
+    likedPost1() {
+      this.liked1 = !this.liked1;
+    },
+    likedPost2() {
+      this.liked2 = !this.liked2;
     },
   },
 };
@@ -471,6 +696,14 @@ export default {
 <style scoped>
 :root {
   --bg-size: 100% 100%;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
 }
 .vue-color {
   color: #42b883 !important;
@@ -518,9 +751,9 @@ a {
   margin-bottom: -5px;
 }
 .btn-success {
-    color: #fff;
-    background-color: #42b883;
-    border-color: #42b883;
+  color: #fff;
+  background-color: #42b883;
+  border-color: #42b883;
 }
 .router-link-active {
   color: #35495e !important;
@@ -540,8 +773,8 @@ a {
 .logo {
   width: 100px;
 }
-.b{
-  font-size:1rem;
+.b {
+  font-size: 1rem;
 }
 
 p,
@@ -658,5 +891,15 @@ svg,
   100% {
     margin-top: -275px;
   }
+}
+
+/* left side div style */
+.about_me_div{
+  height: 22rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, transparent 75%,rgba(208,206,207,0.5) 75%),url("~@/assets/images/use.jpg");
+  background-size: 100% 100%;
 }
 </style>
