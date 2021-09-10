@@ -8,12 +8,12 @@
     >
       <path
         d="M-1.97,104.11 C-4.79,105.09 352.42,5.44 503.67,75.48 L500.00,150.00 L0.00,150.00 Z"
-        style="stroke: none; fill: #1b2a4e;"
+        style="stroke: none; fill: #35495e;"
       ></path>
     </svg>
   </div>
 
-  <div style="background-color: #1b2a4e">
+  <div style="background-color: #35495e">
     <div class="container">
       <div class="row text-center text-white">
         <h2 class="fw-bold mb-4">کنفرانس‌ها</h2>
@@ -136,7 +136,7 @@
     >
       <path
         d="M0.00,49.98 C149.99,150.00 501.97,37.98 501.97,38.97 L500.00,0.00 L0.00,0.00 Z"
-        style="stroke: none; fill: #1b2a4e;"
+        style="stroke: none; fill: #35495e;"
       ></path>
     </svg>
   </div>

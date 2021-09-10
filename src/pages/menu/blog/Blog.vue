@@ -69,7 +69,7 @@
               </li>
               <li class="nav-item">
                 <router-link
-                  class="nav-link col-1 col-sm-auto fw-bold px-3"
+                  class="nav-link col-sm-auto fw-bold px-3"
                   :to="{ name: 'blog' }"
                   >وبلاگ</router-link
                 >
@@ -132,7 +132,7 @@
         <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
           <div class="row gx-5 mx-sm-auto">
             <!-- to get the left side of the div space -->
-            <div class="col-lg-8 col-md-11 col-11 mx-auto me-md-0">
+            <div class="col-lg-8 col-md-11 col-11 mx-auto me-lg-0">
               <div class="row gy-5">
                 <!-- first post -->
                 <div class="col-12 card p-4 shadow blog_left__div">
@@ -196,7 +196,7 @@
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-check2 "
+                          class="bi bi-check2 animate__animated animate__fadeIn"
                           viewBox="0 0 16 16"
                           v-else
                         >
@@ -208,34 +208,37 @@
                     </div>
                     <div>
                       <button
-                        class="btn btn-outline-success mb-3"
+                        class="btn btn-outline-success mb-3 py-1"
                         @click="showPost"
                       >
                         پاسخ
-                        <badge class="badge bg-white text-dark p-2">۱</badge>
+                        <p class="badge bg-white text-dark m-0">۱</p>
                       </button>
                     </div>
                   </div>
-                  <div
-                    class="replies pb-4 animate__animated animate__fadeInDown"
-                    id="reply1"
-                    v-if="!post"
+                  <transition
+                    name="custom-classes-transition"
+                    enter-active-class="animate__animated animate__fadeInDown"
+                    leave-active-class="animate__animated animate__fadeOutDown"
                   >
-                    <div
-                      class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
-                    >
-                      <div class="reply_img mx-2 align-items-center">
-                        <img src="@/assets/images/user1.jpg" alt="" />
-                      </div>
-                      <div class="replY_text_left">
-                        <p class="blog_title m-0 small">
-                          <span class="fw-bold" style="color:black">دلکش </span
-                          >۱۸ سپتامبر ٬۲۰۲۰ ۵:۳۷
-                        </p>
-                        <p class="m-0">عالی بود پستت٬ادامه بده!!</p>
+                    <div class="replies pb-4 " id="reply1" v-if="!post">
+                      <div
+                        class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
+                      >
+                        <div class="reply_img mx-2 align-items-center">
+                          <img src="@/assets/images/user1.jpg" alt="" />
+                        </div>
+                        <div class="replY_text_left">
+                          <p class="blog_title m-0 small">
+                            <span class="fw-bold" style="color:black"
+                              >دلکش </span
+                            >۱۸ سپتامبر ٬۲۰۲۰ ۵:۳۷
+                          </p>
+                          <p class="m-0">عالی بود پستت٬ادامه بده!!</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </transition>
                 </div>
                 <!-- second post -->
                 <div class="col-12 card p-4 shadow blog_left__div">
@@ -311,48 +314,52 @@
                     </div>
                     <div>
                       <button
-                        class="btn btn-outline-success mb-3"
+                        class="btn btn-outline-success mb-3 py-1"
                         @click="showPost1"
                       >
                         پاسخ
-                        <badge class="badge bg-white text-dark p-2">۲</badge>
+                        <p class="badge bg-white text-dark m-0">۲</p>
                       </button>
                     </div>
                   </div>
-                  <div
-                    class="replies pb-4 animate__animated animate__fadeInDown"
-                    id="reply1"
-                    v-if="!post1"
+                  <transition
+                    name="custom-classes-transition"
+                    enter-active-class="animate__animated animate__fadeInDown"
+                    leave-active-class="animate__animated animate__fadeOutDown"
                   >
-                    <div
-                      class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
-                    >
-                      <div class="reply_img mx-2 align-items-center">
-                        <img src="@/assets/images/user1.jpg" alt="" />
+                    <div class="replies pb-4 " id="reply1" v-if="!post1">
+                      <div
+                        class="d-flex justify-content-start flex-row align-items-center card replay_card py-3 mb-3"
+                      >
+                        <div class="reply_img mx-2 align-items-center">
+                          <img src="@/assets/images/user1.jpg" alt="" />
+                        </div>
+                        <div class="replY_text_left">
+                          <p class="blog_title m-0 small">
+                            <span class="fw-bold" style="color:black"
+                              >دلکش </span
+                            >۱۸ سپتامبر ٬۲۰۲۰ ۵:۳۷
+                          </p>
+                          <p class="m-0">کاش میشد دید.</p>
+                        </div>
                       </div>
-                      <div class="replY_text_left">
-                        <p class="blog_title m-0 small">
-                          <span class="fw-bold" style="color:black">دلکش </span
-                          >۱۸ سپتامبر ٬۲۰۲۰ ۵:۳۷
-                        </p>
-                        <p class="m-0">کاش میشد دید.</p>
+                      <div
+                        class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
+                      >
+                        <div class="reply_img mx-2 align-items-center">
+                          <img src="@/assets/images/user1.jpg" alt="" />
+                        </div>
+                        <div class="replY_text_left">
+                          <p class="blog_title m-0 small">
+                            <span class="fw-bold" style="color:black"
+                              >دلکش </span
+                            >۱۸ سپتامبر ٬۲۰۲۱ ۱:۳۱
+                          </p>
+                          <p class="m-0">رو چ حساب آخه اینجوری عمل کردن؟؟</p>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
-                    >
-                      <div class="reply_img mx-2 align-items-center">
-                        <img src="@/assets/images/user1.jpg" alt="" />
-                      </div>
-                      <div class="replY_text_left">
-                        <p class="blog_title m-0 small">
-                          <span class="fw-bold" style="color:black">دلکش </span
-                          >۱۸ سپتامبر ٬۲۰۲۱ ۱:۳۱
-                        </p>
-                        <p class="m-0">رو چ حساب آخه اینجوری عمل کردن؟؟</p>
-                      </div>
-                    </div>
-                  </div>
+                  </transition>
                 </div>
                 <!-- third post -->
                 <div class="col-12 card p-4 shadow blog_left__div mb-5">
@@ -428,64 +435,69 @@
                     </div>
                     <div>
                       <button
-                        class="btn btn-outline-success mb-3"
+                        class="btn btn-outline-success mb-3 py-1"
                         @click="showPost2"
                       >
                         پاسخ
-                        <badge class="badge bg-white text-dark p-2">۳</badge>
+                        <p class="badge bg-white text-dark  m-0">۳</p>
                       </button>
                     </div>
                   </div>
-                  <div
-                    class="replies pb-4 animate__animated animate__fadeInDown"
-                    id="reply1"
-                    v-if="!post2"
+                  <transition
+                    name="custom-classes-transition"
+                    enter-active-class="animate__animated animate__fadeInDown"
+                    leave-active-class="animate__animated animate__fadeOutDown"
                   >
-                    <div
-                      class="d-flex justify-content-start flex-row align-items-center card replay_card py-3 mb-3"
-                    >
-                      <div class="reply_img mx-2 align-items-center ">
-                        <img src="@/assets/images/user1.jpg" alt="" />
+                    <div class="replies pb-4" id="reply1" v-if="!post2">
+                      <div
+                        class="d-flex justify-content-start flex-row align-items-center card replay_card py-3 mb-3"
+                      >
+                        <div class="reply_img mx-2 align-items-center ">
+                          <img src="@/assets/images/user1.jpg" alt="" />
+                        </div>
+                        <div class="replY_text_left">
+                          <p class="blog_title m-0 small">
+                            <span class="fw-bold" style="color:black"
+                              >دلکش </span
+                            >۱۸ سپتامبر ٬۲۰۲۱ ۶:۳۷
+                          </p>
+                          <p class="m-0">
+                            اصن فکرشم نمیکردم اینجوری بوده باشه!!!
+                          </p>
+                        </div>
                       </div>
-                      <div class="replY_text_left">
-                        <p class="blog_title m-0 small">
-                          <span class="fw-bold" style="color:black">دلکش </span
-                          >۱۸ سپتامبر ٬۲۰۲۱ ۶:۳۷
-                        </p>
-                        <p class="m-0">
-                          اصن فکرشم نمیکردم اینجوری بوده باشه!!!
-                        </p>
+                      <div
+                        class="d-flex justify-content-start flex-row align-items-center card replay_card py-3 mb-3"
+                      >
+                        <div class="reply_img mx-2 align-items-center">
+                          <img src="@/assets/images/user1.jpg" alt="" />
+                        </div>
+                        <div class="replY_text_left">
+                          <p class="blog_title m-0 small">
+                            <span class="fw-bold" style="color:black"
+                              >دلکش </span
+                            >۱۸ سپتامبر ٬۲۰۲۲ ۹:۳۷
+                          </p>
+                          <p class="m-0">قشنگ بود :///</p>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
+                      >
+                        <div class="reply_img mx-2 align-items-center">
+                          <img src="@/assets/images/user1.jpg" alt="" />
+                        </div>
+                        <div class="replY_text_left">
+                          <p class="blog_title m-0 small">
+                            <span class="fw-bold" style="color:black"
+                              >دلکش </span
+                            >۱۸ سپتامبر ٬۲۰۲۰ ۵:۳۷
+                          </p>
+                          <p class="m-0">عالی بود پستت٬ادامه بده!!</p>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      class="d-flex justify-content-start flex-row align-items-center card replay_card py-3 mb-3"
-                    >
-                      <div class="reply_img mx-2 align-items-center">
-                        <img src="@/assets/images/user1.jpg" alt="" />
-                      </div>
-                      <div class="replY_text_left">
-                        <p class="blog_title m-0 small">
-                          <span class="fw-bold" style="color:black">دلکش </span
-                          >۱۸ سپتامبر ٬۲۰۲۲ ۹:۳۷
-                        </p>
-                        <p class="m-0">قشنگ بود :///</p>
-                      </div>
-                    </div>
-                    <div
-                      class="d-flex justify-content-start flex-row align-items-center card replay_card py-3"
-                    >
-                      <div class="reply_img mx-2 align-items-center">
-                        <img src="@/assets/images/user1.jpg" alt="" />
-                      </div>
-                      <div class="replY_text_left">
-                        <p class="blog_title m-0 small">
-                          <span class="fw-bold" style="color:black">دلکش </span
-                          >۱۸ سپتامبر ٬۲۰۲۰ ۵:۳۷
-                        </p>
-                        <p class="m-0">عالی بود پستت٬ادامه بده!!</p>
-                      </div>
-                    </div>
-                  </div>
+                  </transition>
                 </div>
               </div>
             </div>
@@ -495,41 +507,45 @@
             >
               <div class="row gy-5 left_div_blog">
                 <!-- About me -->
-                <div class="col-12 container-fluid about_me_div shadow farsi text-md-center ">
+                <div
+                  class="col-12 container-fluid about_me_div shadow farsi text-md-center mb-5"
+                >
                   <p class="text-white fs-4 mb-0 text-center">امید دلکَش</p>
-                  <p class="text-white fs-6 text-center">بله من ویو‌جی‌اس ‌دولوپر هستم.!</p>
+                  <p class="text-white fs-6 text-center">
+                    بله من ویو‌جی‌اس ‌دولوپر هستم.!
+                  </p>
                 </div>
                 <!-- core team member -->
                 <div class="core_team">
-                  <div class="right_div_title py-4 pl-2">
+                  <div class="right_div_title py-2 pl-2">
                     <h5>اعضای اصلی</h5>
                   </div>
-                  <div class="right_sub-div shadow">
+                  <div class="right_sub__div shadow small">
                     <div class="row">
                       <div class="col-3 core_team__img1 py-2 pl-2"></div>
-                      <div class="col-9">
-                        <h5>ایوان یوو</h5>
+                      <div class="col-9 mt-3" style="padding-right:.5rem">
+                        <h5 class="mb-0">ایوان یوو</h5>
                         <p>خالق ویو‌جی‌اس</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-3 core_team__img1 py-2 pl-2"></div>
-                      <div class="col-9">
-                        <h5>بن هانگ</h5>
+                      <div class="col-3 core_team__img2 py-2 pl-2"></div>
+                      <div class="col-9 mt-3" style="padding-right:.5rem">
+                        <h5 class="mb-0">کازُپون</h5>
                         <p>عضو اصلی تیم</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-3 core_team__img1 py-2 pl-2"></div>
-                      <div class="col-9">
-                        <h5>آدام جار</h5>
+                      <div class="col-3 core_team__img3 py-2 pl-2"></div>
+                      <div class="col-9 mt-3" style="padding-right:.5rem">
+                        <h5 class="mb-0">آدام جار</h5>
                         <p>بنیان‌گذار vuemastery</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-3 core_team__img1 py-2 pl-2"></div>
-                      <div class="col-9">
-                        <h5>کیا کینگ</h5>
+                      <div class="col-3 core_team__img4 py-2 pl-2"></div>
+                      <div class="col-9 mt-3" style="padding-right:.5rem">
+                        <h5 class="mb-0">کیا کینگ</h5>
                         <p>عضو اصلی تیم</p>
                       </div>
                     </div>
@@ -538,21 +554,23 @@
 
                 <!-- advertise part -->
                 <div class="right_div_post">
-                  <div class="right_div_title py-4 pl-2">
+                  <div class="right_div_title py-2 pl-2">
                     <h5>تبلیغات</h5>
                   </div>
                   <div class="right_sub_div">
-                    <div class="advertise_img bg-light shadow">
-                      <p>تبلیغات اینجا قرار می‌گیرد.</p>
+                    <div class="advertise_img shadow">
+                      <p>تبلیغات در اینجا قرار می‌گیرد.</p>
                     </div>
                   </div>
                 </div>
                 <!-- tags -->
                 <div class="right_div_post">
-                  <div class="right_div__title py-4 pl-2">
+                  <div class="right_div_title py-2 pl-2">
                     <h5>تگ‌ها</h5>
                   </div>
-                  <div class="tags-main right_sub__div">
+                  <div
+                    class="tags_main right_sub__div bgv p-1 shadow py-2 justify-content-around"
+                  >
                     <a href="#" class="badge shadow text-capitalize">vue</a>
                     <a href="#" class="badge shadow text-capitalize">vuetify</a>
                     <a href="#" class="badge shadow text-capitalize">vuex</a>
@@ -568,10 +586,10 @@
                 </div>
                 <!-- inspiration -->
                 <div class="right_div_post">
-                  <div class="right_div__title py-4 pl-2">
+                  <div class="right_div_title py-2 pl-2">
                     <h5>الهام‌گرفته‌شده از</h5>
                   </div>
-                  <div class="right_sub__div">
+                  <div class="right_sub__div text-center p-2 shadow pt-4">
                     <div class="row gx-3">
                       <div class="col-6">
                         <figure>
@@ -613,27 +631,41 @@
                   </div>
                 </div>
                 <!-- follow me -->
-                <div class="right-div-post">
-                  <div class="right_div_title py-4 pl-2">
+                <div class="right_div_post">
+                  <div class="right_div_title py-2 pl-2">
                     <h5>دنبال‌ کنید</h5>
                   </div>
-                  <div class="right_sub_div d-flex justify-content-around">
-                    <a href="#"><i class="bi bi-telegram"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-github"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <div
+                    class="right_sub__div d-flex justify-content-around pb-4 shadow"
+                  >
+                    <a href="#"
+                      ><i class="bi bi-telegram bis hvr-buzz-out"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="bi bi-instagram bis hvr-buzz-out"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="bi bi-github bis hvr-buzz-out"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="bi bi-linkedin bis hvr-buzz-out"></i
+                    ></a>
                   </div>
                 </div>
                 <!-- subscribe newsletter -->
-                <div class="right-div-post">
-                  <div class="right_div_title py-4 pl-2">
+                <div class="right_div_post">
+                  <div class="right_div_title py-2 pl-2">
                     <h5>اشتراک‌گذاری</h5>
                   </div>
-                  <div class="right_sub_div ">
-                    <form>
-                      <div class="mb-3">
+                  <div class="right_sub_div">
+                    <form @submit.prevent="validate">
+                      <div
+                        class="mb-3 p-3 shadow"
+                        style="border-radius: 0 0 5px 5px;"
+                      >
                         <label for="exampleInputEmail1" class="form-label"
-                          >آدرس ایمیل خود را برای دریافت آخرین خبرها وارد کنید.</label
+                          >آدرس ایمیل خود را برای دریافت آخرین خبرها وارد
+                          کنید.</label
                         >
                         <input
                           type="email"
@@ -641,10 +673,31 @@
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
                           placeholder="name@mail.com"
+                          v-model="form.title"
                         />
-                      <button type="submit" class="btn btn-success mt-2">
-                        ارسال
-                      </button>
+                        <div style="font-size:13px;direction:ltr">
+                          <transition name="slide-fade" mode="out-in">
+                            <p class="text-danger" v-if="form.titleError">
+                              {{ form.titleError }}
+                            </p>
+                          </transition>
+                        </div>
+                        <button
+                          type="submit"
+                          class="btn btn-success mt-2"
+                          :disabled="loading"
+                        >
+                          <div
+                            v-if="loading"
+                            class="spinner-border spinner-border-sm "
+                            role="status"
+                          >
+                            <!-- <transition name="slide-fade" mode="out-in"> -->
+                            <span class="visually-hidden">Loading...</span>
+                            <!-- </transition> -->
+                          </div>
+                          ارسال
+                        </button>
                       </div>
                     </form>
                   </div>
@@ -655,10 +708,19 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <p class="text-center py-4 bg-light">
+        طراحی شده توسط <span class="farsi">"دلکش"</span>
+      </p>
+    </footer>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+import Swal from "sweetalert2";
+
 export default {
   data() {
     return {
@@ -668,6 +730,11 @@ export default {
       liked: false,
       liked1: false,
       liked2: false,
+      form: {
+        title: "",
+        titleError: "",
+      },
+      loading: false,
     };
   },
   methods: {
@@ -688,6 +755,45 @@ export default {
     },
     likedPost2() {
       this.liked2 = !this.liked2;
+    },
+    validate() {
+      if (this.form.title === "") {
+        this.form.titleError = "Email needed!!";
+      } else {
+        this.form.titleError = "";
+      }
+      if (this.form.title !== "") {
+        this.loading = true;
+        this.sendMail();
+      }
+    },
+    sendMail() {
+      axios
+        .post("https://jsonplaceholder.typicode.com/posts", {
+          title: this.form.title,
+          userId: 1,
+        })
+        .then(() => {
+          this.loading = false;
+
+          Swal.fire({
+            title: "متشکریم",
+            text: "ایمیل با موفقیت ارسال شد.",
+            icon: "success",
+            confirmButtonText: "تاٍیید",
+          });
+        })
+        .then(() => {
+          this.form.title = "";
+        })
+        .catch(function(err) {
+          console.log(err);
+        });
+    },
+  },
+  watch: {
+    $route(to, from) {
+      document.title = to.meta.title || "درباره‌ی من ــ  پورتفولیو";
     },
   },
 };
@@ -735,6 +841,19 @@ export default {
 .bank {
   font-family: "Bank";
 }
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
 a {
   text-decoration: none;
 }
@@ -776,7 +895,6 @@ a {
 .b {
   font-size: 1rem;
 }
-
 p,
 label,
 input::placeholder {
@@ -839,10 +957,10 @@ svg,
     margin-top: -272px;
   }
   30% {
-    margin-top: -177px;
+    margin-top: -179px;
   }
   50% {
-    margin-top: -177px;
+    margin-top: -179px;
   }
   55% {
     margin-top: -87px;
@@ -851,10 +969,10 @@ svg,
     margin-top: -87px;
   }
   80% {
-    margin-top: 8px;
+    margin-top: 6px;
   }
   99.99% {
-    margin-top: 8px;
+    margin-top: 6px;
   }
   100% {
     margin-top: -275px;
@@ -871,10 +989,10 @@ svg,
     margin-top: -272px;
   }
   30% {
-    margin-top: -177px;
+    margin-top: -179px;
   }
   50% {
-    margin-top: -177px;
+    margin-top: -179px;
   }
   55% {
     margin-top: -87px;
@@ -883,10 +1001,10 @@ svg,
     margin-top: -87px;
   }
   80% {
-    margin-top: 8px;
+    margin-top: 6px;
   }
   99.99% {
-    margin-top: 8px;
+    margin-top: 6px;
   }
   100% {
     margin-top: -275px;
@@ -894,12 +1012,105 @@ svg,
 }
 
 /* left side div style */
-.about_me_div{
+.about_me_div {
   height: 22rem;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  background-image: linear-gradient(to bottom, transparent 75%,rgba(208,206,207,0.5) 75%),url("~@/assets/images/use.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      transparent 75%,
+      rgba(208, 206, 207, 0.5) 75%
+    ),
+    url("~@/assets/images/use.jpg");
   background-size: 100%;
+  border-radius: 5px;
+}
+.right_div_title {
+  background-image: linear-gradient(to right, #42b883, #35495e);
+  color: #fff;
+  box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.5);
+  border-radius: 5px 5px 0 0;
+}
+.right_div_title h5 {
+  padding-right: 2rem;
+  margin-bottom: 0;
+  margin: 0.5rem 0;
+}
+.core_team__img1 {
+  background-image: url("~@/assets/images/you.jpg");
+  background-size: 100% 100%;
+  /* border-radius: 100%; */
+  height: 4.5rem;
+}
+.core_team__img2 {
+  background-image: url("~@/assets/images/kazu.jpg");
+  background-size: 100% 100%;
+  height: 4.5rem;
+}
+.core_team__img3 {
+  background-image: url("~@/assets/images/adam-jahr.jpg");
+  background-size: 100% 100%;
+  /* border-radius: 100%; */
+  height: 4.5rem;
+}
+.core_team__img4 {
+  background-image: url("~@/assets/images/king.jpg");
+  background-size: 100% 100%;
+  /* border-radius: 100%; */
+  height: 4.5rem;
+}
+.right_sub__div {
+  background: #fff;
+  padding: 0.5rem 0 0 0;
+  border-radius: 0 0 5px 5px;
+}
+.right_sub__div .row {
+  /* margin-bottom:1rem; */
+  padding-right: 0.3rem;
+}
+/* ad */
+.advertise_img {
+  min-width: 10rem;
+  height: 10rem;
+  display: grid;
+  place-items: center;
+}
+
+/* tags style */
+.tags_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4rem, 8rem));
+  grid-gap: 0.5rem;
+}
+.tags_main a {
+  font-size: 1rem;
+  line-height: 170%;
+  font-weight: lighter;
+  background: #35495e;
+}
+.tags_main a:hover {
+  color: white;
+  background-image: linear-gradient(to right, #35495e, #42b883);
+  transition: all ease 0.2s;
+}
+/* icon */
+.bis {
+  color: #000;
+  font-size: 2rem;
+}
+.bi:hover {
+  color: #42b883;
+}
+/* subscribe */
+.right_sub_div #exampleInputEmail1 {
+  font-family: sans-serif;
+  direction: ltr;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+footer p {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 </style>

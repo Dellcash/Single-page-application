@@ -10,9 +10,11 @@
 
 <script>
 export default {
-  setup() {
-    return {};
-  },
+    watch: {
+      '$route' (to, from) {
+        document.title = to.meta.title || 'پورتفولیو ــ درباره‌ی من'
+      }
+    }
 };
 </script>
 

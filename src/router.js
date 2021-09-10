@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   // Home
-  { path: "/", name: 'home', component: () => import('./pages/home/Template.vue') },
+  { path: "/", name: 'home', component: () => import('./pages/home/Template.vue'), meta: { auto: true, title: 'واو ــ دنیای ویو‌جی‌اس' } },
   { path: '/signin', name: 'signIn', component: () => import('@/components/sections/SignIn.vue') },
   { path: '/signup', name: 'signUp', component: () => import('@/components/sections/SingUp.vue') },
 
@@ -35,12 +35,14 @@ const routes = [
       hideNavbar: true,
     }
   },
-  { path: '/about', name: 'aboutMe', component: () => import('./pages/menu/about/About.vue') },
+  { path: '/about', name: 'aboutMe', component: () => import('./pages/menu/about/About.vue'), meta:{auto:true, title:' درباره‌ی من ــ  پورتفولیو'} },
 
   // Blog
-  { path: '/blog', name: 'blog', component: () => import('./pages/menu/blog/Blog.vue'), meta:{
-    hideNavbar: true
-  } },
+  {
+    path: '/blog', name: 'blog', component: () => import('./pages/menu/blog/Blog.vue'), meta: {
+      hideNavbar: true, auto: true, title: 'وبلاگ ــ یعنی ریزاطلاعات'
+    }
+  },
 
   // 404 Page
   { path: "/:pathMatch(.*)*", name: "pageNotFound", component: () => import('./pages/home/404.vue') }

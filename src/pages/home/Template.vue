@@ -19,9 +19,11 @@ import section5 from "./section-5.vue";
 
 export default {
   components: { section1, section2, section3, section4, section5, Footer},
-  setup() {
-    return {};
-  },
+    watch: {
+      '$route' (to, from) {
+        document.title = to.meta.title || 'واو ــ دنیای ویو‌جی‌اس'
+      }
+    },
 };
 </script>
 

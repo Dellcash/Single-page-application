@@ -191,7 +191,7 @@ a {
   color: rgba(0, 0, 0, 0.9);
 }
 .card-primary{
-  background-color: #1b2a4e;
+  background-color: #35495e;
   color: white !important
 }
 
