@@ -792,8 +792,8 @@ export default {
     },
   },
   watch: {
-    $route(to, from) {
-      document.title = to.meta.title || "درباره‌ی من ــ  پورتفولیو";
+    $route(to) {
+      document.title = to.meta.title || "وبلاگ ــ یعنی ریزاطلاعات";
     },
   },
 };
