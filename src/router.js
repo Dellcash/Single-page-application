@@ -35,7 +35,7 @@ const routes = [
       hideNavbar: true,
     }
   },
-  { path: '/about', name: 'aboutMe', component: () => import('./pages/menu/about/About.vue'), meta:{auto:true, title:' درباره‌ی من ــ  پورتفولیو'} },
+  { path: '/about', name: 'aboutMe', component: () => import('./pages/menu/about/About.vue'), meta: { hideNavbar: true, auto: true, title: ' درباره‌ی من ــ  پورتفولیو' } },
 
   // Blog
   {

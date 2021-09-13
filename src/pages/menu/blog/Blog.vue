@@ -511,7 +511,7 @@
                   class="col-12 container-fluid about_me_div shadow farsi text-md-center mb-5"
                 >
                   <p class="text-white fs-4 mb-0 text-center">امید دلکَش</p>
-                  <p class="text-white fs-6 text-center">
+                  <p class="text-white fs-6 text-center mb-1">
                     بله من ویو‌جی‌اس ‌دولوپر هستم.!
                   </p>
                 </div>
@@ -1013,7 +1013,7 @@ svg,
 
 /* left side div style */
 .about_me_div {
-  height: 22rem;
+  height: 19rem;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -1022,8 +1022,8 @@ svg,
       transparent 75%,
       rgba(208, 206, 207, 0.5) 75%
     ),
-    url("~@/assets/images/use.jpg");
-  background-size: 100%;
+    url("~@/assets/images/pro.jpeg");
+  background-size: 100% ;
   border-radius: 5px;
 }
 .right_div_title {
