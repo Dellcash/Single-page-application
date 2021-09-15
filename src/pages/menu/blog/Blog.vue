@@ -522,28 +522,28 @@
                   </div>
                   <div class="right_sub__div shadow small">
                     <div class="row">
-                      <div class="col-3 core_team__img1 py-2 pl-2"></div>
+                      <div class="col-3 core_team__img1 py-2 pl-2 rounded-3"></div>
                       <div class="col-9 mt-3" style="padding-right:.5rem">
                         <h5 class="mb-0">ایوان یوو</h5>
                         <p>خالق ویو‌جی‌اس</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-3 core_team__img2 py-2 pl-2"></div>
+                      <div class="col-3 core_team__img2 py-2 pl-2 rounded-3"></div>
                       <div class="col-9 mt-3" style="padding-right:.5rem">
                         <h5 class="mb-0">کازُپون</h5>
                         <p>عضو اصلی تیم</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-3 core_team__img3 py-2 pl-2"></div>
+                      <div class="col-3 core_team__img3 py-2 pl-2 rounded-3"></div>
                       <div class="col-9 mt-3" style="padding-right:.5rem">
                         <h5 class="mb-0">آدام جار</h5>
                         <p>بنیان‌گذار vuemastery</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-3 core_team__img4 py-2 pl-2"></div>
+                      <div class="col-3 core_team__img4 py-2 pl-2 rounded-3"></div>
                       <div class="col-9 mt-3" style="padding-right:.5rem">
                         <h5 class="mb-0">کیا کینگ</h5>
                         <p>عضو اصلی تیم</p>
@@ -1023,7 +1023,7 @@ svg,
       rgba(208, 206, 207, 0.5) 75%
     ),
     url("~@/assets/images/pro.jpeg");
-  background-size: 100% ;
+  background-size: cover ;
   border-radius: 5px;
 }
 .right_div_title {

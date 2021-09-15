@@ -1,5 +1,6 @@
 <template>
   <div class="body">
+    <div class="background"></div>
     <div class="intro-right">
       <div class="container-fluid full-height">
         <div class="row text-center align-items-center full-height">
@@ -19,7 +20,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-8 panel-left">
+        <div class="col-md-8 panel-left px-0">
           <section class="quote">
             <figure>
               <blockquote class="blockquote">
@@ -163,7 +164,7 @@
             <a href="#" class="a float-start mt-4 px-4 parand fs-5">بیشتر ››</a>
           </section>
 
-          <section class="contact">
+          <section class="contact pb-5">
             <div class="container">
               <h1 class="parand py-3">ارسال پیام به من:</h1>
               <form
@@ -171,7 +172,7 @@
                 action="https://formsubmit.co/omiddellcash@gmail.com"
                 method="POST"
               >
-              <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_captcha" value="false" />
                 <div class="form-group">
                   <div class="row mb-4 gy-4">
                     <div class="col-md-6">
@@ -198,7 +199,7 @@
                 <div class="form-group">
                   <textarea
                     placeholder="متن پیام"
-                    class="form-control parand"
+                    class="form-control parand fs-4"
                     name="message"
                     rows="5"
                     required
@@ -225,6 +226,15 @@
               ></a>
             </div>
           </section>
+
+          <footer class="footer">
+            <div class="container-fluid text-center shadow py-3 mt-5">
+              <span class="text-muted parand">
+                طراحی شده توسط
+                <span class="farsi">"دلکش"</span>
+              </span>
+            </div>
+          </footer>
         </div>
       </div>
     </div>
@@ -341,5 +351,20 @@ section {
 }
 .phone:hover {
   color: #fff;
+}
+.footer {
+  background-color: #fff;
+  font-size: 1rem;
+}
+/* .panel-left{
+  background-color:#eee;
+} */
+.background {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  clip-path: polygon(11% 0, 80% 0%, 100% 100%, 41% 100%);
 }
 </style>
