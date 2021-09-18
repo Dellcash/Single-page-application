@@ -64,38 +64,54 @@
           </section>
 
           <section class="projects">
-            <h2 class="display-7 parand mb-4">
+            <h2 class="display-7 parand mb-4 ">
               تعدادی از پروژه‌های که با این فریمورک پیاده‌سازی کردم:
             </h2>
             <div class="container-fluid">
-              <div class="row gy-4 ">
-                <div class="col-md-6">
+              <div class="row gy-3 ">
+                <div class="card mb-3 p-0 shadow col-md-12">
                   <img
-                    src="@/assets/images/g1.jpg"
-                    alt="Portfolio image"
-                    class="img-fluid thumbnail"
+                    src="@/assets/images/wh1c0.png"
+                    class="card-img-top shadow"
+                    alt="..."
                   />
+                  <div class="card-body ">
+                    <h5 class="card-title bank">-ویکوو</h5>
+                    <p class="card-text lh-sm px-2 parand text-muted">
+                      شبکه اجتماعی‌ای
+                      <span class="nabi fs-4">کراس‌ پلتفرمی</span> که برای
+                      برنامه‌نویسان به‌کمک فریمورک
+                      <span class="font-e">Vuejs</span> و
+                      <span class="font-e">Quasar</span> و
+                      <span class="font-e">Firebase</span> طراحی شده و محیطی
+                      برای تأمل بین آنها است.
+                    </p>
+                    <a
+                      href="https://whico.netlify.app/#/"
+                      class="btn btn-outline-secondary float-start parand"
+                      target="_blank"
+                      >مشاهده ...</a
+                    >
+                  </div>
                 </div>
-                <div class="col-md-6">
+
+                <div class="card mb-3 p-0 shadow col-md-6">
                   <img
-                    src="@/assets/images/g2.jpg"
-                    alt="Portfolio image"
-                    class="img-fluid thumbnail"
+                    src="@/assets/images/blog.gif"
+                    class="card-img-top shadow"
+                    alt="..."
                   />
-                </div>
-                <div class="col-md-6">
-                  <img
-                    src="@/assets/images/g3.jpg"
-                    alt="Portfolio image"
-                    class="img-fluid thumbnail"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <img
-                    src="@/assets/images/g4.jpg"
-                    alt="Portfolio image"
-                    class="img-fluid thumbnail"
-                  />
+                  <div class="card-body ">
+                    <h4 class="card-title ghasem">-دنیای ویو‌جی‌اس</h4>
+                    <p class="card-text lh-sm px-2 parand text-muted">
+                      وبلاگی درمورده بروزترین اطلاعات درمورده فریمورک ویو‌جی‌اس.
+                    </p>
+                    <router-link
+                      :to="{ name: 'blog' }"
+                      class="btn btn-outline-secondary float-start parand"
+                      >مشاهده ...</router-link
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -367,4 +383,8 @@ section {
   position: fixed;
   clip-path: polygon(11% 0, 80% 0%, 100% 100%, 41% 100%);
 }
+/* .row>*{
+  padding-right:0;
+  padding-left:0
+} */
 </style>
