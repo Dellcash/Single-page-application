@@ -20,7 +20,7 @@ import section5 from "./section-5.vue";
 export default {
   components: { section1, section2, section3, section4, section5, Footer},
     watch: {
-      '$route' (to, from) {
+      '$route' (to) {
         document.title = to.meta.title || 'واو ــ دنیای ویو‌جی‌اس'
       }
     },

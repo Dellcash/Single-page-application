@@ -87,7 +87,7 @@
                       برای تأمل بین آنها است.
                     </p>
                     <a
-                      href="https://whico.netlify.app/#/about"
+                      href="https://whico.netlify.app/#/"
                       class="btn btn-outline-secondary float-start parand"
                       target="_blank"
                       >مشاهده ...</a
