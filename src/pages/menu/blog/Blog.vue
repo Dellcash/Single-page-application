@@ -245,16 +245,19 @@
                   <div
                     class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 "
                   >
-                    <h1 class="mosa ">ویو‌جی‌اس ۳</h1>
+                  <h3 class="mosa">وضیعت ویو در ۲۰۲۱</h3>
+                    <h5 class="text-center parand">
+                      ویت ورژن۲,ویوایکس۵,ویوتیفای برای ویو‌جی‌اس۳
+                    </h5>
                     <p class="blog_title nabi">
                       <span class="fw-bold ">زمان انتشار,</span>
-                      <span>۱۸ سپتامبر ۲۰۲۰</span>
+                      <span>۶ مارچ ۲۰۲۱</span>
                     </p>
                   </div>
                   <figure class="right_side__img mb-5">
                     <img
-                      src="@/assets/images/v3..jpg"
-                      class="img-fluid shadow hvr-float-shadow"
+                      src="@/assets/images/EGH_VueJSNuxt_Final_1000.png"
+                      class="img-fluid shadow hvr-float-shadow right_div_title col-12"
                     />
                   </figure>
                   <p>
@@ -374,7 +377,7 @@
                   </div>
                   <figure class="right_side__img mb-5">
                     <img
-                      src="@/assets/images/v3..jpg"
+                      src="@/assets/images/vue_1200_630.jpg"
                       class="img-fluid shadow hvr-float-shadow"
                     />
                   </figure>
@@ -518,32 +521,40 @@
                 <!-- core team member -->
                 <div class="core_team">
                   <div class="right_div_title py-2 pl-2">
-                    <h5>اعضای اصلی</h5>
+                    <h5 class="parand">اعضای اصلی</h5>
                   </div>
                   <div class="right_sub__div shadow small">
                     <div class="row">
-                      <div class="col-3 core_team__img1 py-2 pl-2 rounded-3"></div>
+                      <div
+                        class="col-3 core_team__img1 py-2 pl-2 rounded-3"
+                      ></div>
                       <div class="col-9 mt-3" style="padding-right:.5rem">
                         <h5 class="mb-0">ایوان یوو</h5>
                         <p>خالق ویو‌جی‌اس</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-3 core_team__img2 py-2 pl-2 rounded-3"></div>
+                      <div
+                        class="col-3 core_team__img2 py-2 pl-2 rounded-3"
+                      ></div>
                       <div class="col-9 mt-3" style="padding-right:.5rem">
                         <h5 class="mb-0">کازُپون</h5>
                         <p>عضو اصلی تیم</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-3 core_team__img3 py-2 pl-2 rounded-3"></div>
+                      <div
+                        class="col-3 core_team__img3 py-2 pl-2 rounded-3"
+                      ></div>
                       <div class="col-9 mt-3" style="padding-right:.5rem">
                         <h5 class="mb-0">آدام جار</h5>
                         <p>بنیان‌گذار vuemastery</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-3 core_team__img4 py-2 pl-2 rounded-3"></div>
+                      <div
+                        class="col-3 core_team__img4 py-2 pl-2 rounded-3"
+                      ></div>
                       <div class="col-9 mt-3" style="padding-right:.5rem">
                         <h5 class="mb-0">کیا کینگ</h5>
                         <p>عضو اصلی تیم</p>
@@ -555,7 +566,7 @@
                 <!-- advertise part -->
                 <div class="right_div_post">
                   <div class="right_div_title py-2 pl-2">
-                    <h5>تبلیغات</h5>
+                    <h5 class="parand">تبلیغات</h5>
                   </div>
                   <div class="right_sub_div">
                     <div class="advertise_img shadow">
@@ -566,7 +577,7 @@
                 <!-- tags -->
                 <div class="right_div_post">
                   <div class="right_div_title py-2 pl-2">
-                    <h5>تگ‌ها</h5>
+                    <h5 class="parand">تگ‌ها</h5>
                   </div>
                   <div
                     class="tags_main right_sub__div bgv p-1 shadow py-2 justify-content-around"
@@ -587,7 +598,7 @@
                 <!-- inspiration -->
                 <div class="right_div_post">
                   <div class="right_div_title py-2 pl-2">
-                    <h5>الهام‌گرفته‌شده از</h5>
+                    <h5 class="parand">الهام‌گرفته‌شده از</h5>
                   </div>
                   <div class="right_sub__div text-center p-2 shadow pt-4">
                     <div class="row gx-3">
@@ -633,7 +644,7 @@
                 <!-- follow me -->
                 <div class="right_div_post">
                   <div class="right_div_title py-2 pl-2">
-                    <h5>دنبال‌ کنید</h5>
+                    <h5 class="parand">دنبال‌ کنید</h5>
                   </div>
                   <div
                     class="right_sub__div d-flex justify-content-around pb-4 shadow"
@@ -655,7 +666,7 @@
                 <!-- subscribe newsletter -->
                 <div class="right_div_post">
                   <div class="right_div_title py-2 pl-2">
-                    <h5>اشتراک‌گذاری</h5>
+                    <h5 class="parand">اشتراک‌گذاری</h5>
                   </div>
                   <div class="right_sub_div">
                     <form @submit.prevent="validate">
@@ -1023,7 +1034,7 @@ svg,
       rgba(208, 206, 207, 0.5) 75%
     ),
     url("~@/assets/images/pro.jpeg");
-  background-size: cover ;
+  background-size: cover;
   border-radius: 5px;
 }
 .right_div_title {
