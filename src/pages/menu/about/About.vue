@@ -229,16 +229,16 @@
 
             <div class="d-flex justify-content-around pb-4 shadow mt-5 pt-2">
               <a href="https://wa.me/+989353417352"
-                ><i class="bi bi-whatsapp bis hvr-buzz-out fs-2"></i
+                ><i class="bi bi-whatsapp bis hvr-buzz-out fs-2 text-dark"></i
               ></a>
               <a href="https://www.instagram.com/dellcash/"
-                ><i class="bi bi-instagram bis hvr-buzz-out fs-2"></i
+                ><i class="bi bi-instagram bis hvr-buzz-out fs-2 text-dark"></i
               ></a>
               <a href="https://github.com/Dellcash"
-                ><i class="bi bi-github bis hvr-buzz-out fs-2"></i
+                ><i class="bi bi-github bis hvr-buzz-out fs-2 text-dark"></i
               ></a>
               <a href="https://www.linkedin.com/in/dellcash/"
-                ><i class="bi bi-linkedin bis hvr-buzz-out fs-2"></i
+                ><i class="bi bi-linkedin bis hvr-buzz-out fs-2 text-dark"></i
               ></a>
             </div>
           </section>
