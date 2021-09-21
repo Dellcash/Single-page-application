@@ -265,15 +265,6 @@
                     >نام نسخه سوم ویو‌جی‌اس است. " آپدیت های بزرگ ویو هرکدوم با
                     یه اسم انیمه خاص نامگذاری میشن."
                   </p>
-                  <p>
-                    ويژگی‌های مهمی که به این نسخه اضافه شد میشه اشاره کرد به<br />
-                    <span class="fw-bold">"Composition API" </span><br />
-                    <span class="fw-bold">"Teleport" </span><br />
-                    <span class="fw-bold">"Fragments" </span><br />
-                    <span class="fw-bold">"v-modelهای بیشتر" </span><br />
-                    <span class="fw-bold">"سرعت"</span><br />
-                    و...
-                  </p>
                   <a href="#" class="text-success">
                     <p class="vue-color">ادامه مطلب...</p>
                   </a>

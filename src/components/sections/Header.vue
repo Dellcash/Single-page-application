@@ -50,8 +50,8 @@
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <router-link class="dropdown-item" :to="{name: 'adminConsole'}"
-                      >داشبورد ادمین</router-link
+                    <router-link class="dropdown-item" :to="{name: 'aboutMe'}"
+                      >درباره‌ی من</router-link
                     >
                   </li>
                 </ul>
@@ -63,7 +63,7 @@
               >
             </li>
             <li class="nav-item">
-              <router-link class="nav-link col-2 col-sm-auto" to="/about">درباره من</router-link>
+              <router-link class="nav-link col-2 col-sm-auto" to="/admin">داشبورد ادمین</router-link>
             </li>
           </ul>
           <div class="flex-md-shrink-0">
