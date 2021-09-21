@@ -60,8 +60,8 @@
                     <li>
                       <router-link
                         class="dropdown-item"
-                        :to="{ name: 'adminConsole' }"
-                        >داشبورد ادمین</router-link
+                        :to="{ name: 'aboutMe' }"
+                        >درباره من</router-link
                       >
                     </li>
                   </ul>
@@ -77,8 +77,8 @@
               <li class="nav-item">
                 <router-link
                   class="nav-link col-2 col-sm-auto fw-bold px-3"
-                  to="/about"
-                  >درباره من</router-link
+                  to="/admin"
+                  >داشبورد ادمین</router-link
                 >
               </li>
             </ul>
